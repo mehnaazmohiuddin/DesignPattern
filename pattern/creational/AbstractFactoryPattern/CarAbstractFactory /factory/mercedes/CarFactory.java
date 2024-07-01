@@ -1,5 +1,6 @@
 package factory.mercedes;
 
+import factory.CarNotFoundException;
 import model.Car;
 import model.Engine;
 import model.Wheel;
@@ -28,7 +29,11 @@ public class CarFactory implements factory.CarFactory {
     }
 
     @Override
-    public Car createCar(String name) {
-        return new EQT();
+    public Car createCar(String name) throws CarNotFoundException{
+        if (name.equals("EQT"))
+            return new EQT();
+        else {
+            throw new  CarNotFoundException("No Car with model name "+name +" can be built in the mercedes facrtory");
+        }
     }
 }

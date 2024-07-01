@@ -9,5 +9,5 @@ public interface CarFactory {
     public Wheel[] createFrontWheels();
     public Wheel[] createBackWheels();
 
-    public Car createCar(String modelName);
+    public Car createCar(String modelName) throws CarNotFoundException;
 }
