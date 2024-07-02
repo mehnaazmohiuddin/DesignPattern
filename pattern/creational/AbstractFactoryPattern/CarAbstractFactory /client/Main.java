@@ -17,21 +17,14 @@ public class Main {
         }
         System.out.println(myFabCar.getModelName());
         // we can simply create a mercedes car by
-         carFactory = new factory.mercedes.CarFactory(); // builds the parts for the car
-         carCreator = new CarCreator(); // assembles the car
-         myFabCar = null;
+        carFactory = new factory.mercedes.CarFactory(); // builds the parts for the car
+        carCreator = new CarCreator(); // assembles the car
+
         try {
             myFabCar = carCreator.create(carFactory, "HondaCivicZ");
         } catch (CarNotFoundException e) {
-           System.out.println(e.getMessage());
-
-
+            System.out.println(e.getMessage());
         }
-
-
-
-
-
     }
 
 }
