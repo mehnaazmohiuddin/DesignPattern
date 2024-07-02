@@ -1,4 +1,4 @@
-package externalProject;
+package adapter_pattern.externalProject;
 
 public class TextEditImpl implements TextEdit {
     @Override

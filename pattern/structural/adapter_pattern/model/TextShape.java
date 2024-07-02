@@ -1,10 +1,8 @@
-package model;
+package adapter_pattern.model;
 
-import externalProject.TextEdit;
-import externalProject.TextEditImpl;
-import manipulators.Manipultator;
-import model.BoundingBox;
-import model.Shape;
+import adapter_pattern.externalProject.TextEditImpl;
+import adapter_pattern.manipulators.Manipultator;
+import adapter_pattern.externalProject.TextEdit;
 
 
 //This is the Adapter

@@ -1,6 +1,6 @@
-package model;
+package adapter_pattern.model;
 
-import manipulators.Manipultator;
+import adapter_pattern.manipulators.Manipultator;
 
 public class SquareShape implements Shape {
     @Override
