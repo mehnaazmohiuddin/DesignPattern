@@ -6,6 +6,13 @@ import java.util.Optional;
 
 public abstract class Picture{
     public abstract void draw();
+    protected void drawChildren(){
+        if(children != null)
+            for (Picture p : children){
+                System.out.println("drawing  this next");
+                p.draw();
+            }
+    }
     List<Picture> children;
     Picture parentPicture;
     public List<Picture> getAllPictures() {

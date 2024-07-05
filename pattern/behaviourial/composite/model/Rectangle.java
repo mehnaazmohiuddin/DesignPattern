@@ -12,10 +12,7 @@ public class Rectangle extends Picture{
     @Override
     public void draw() {
         System.out.println("drawing rectangle first "+length + breath);
-        for (Picture p : getAllPictures()){
-            System.out.println("drawing  this next");
-            p.draw();
-        }
+        drawChildren();
     }
 
 
