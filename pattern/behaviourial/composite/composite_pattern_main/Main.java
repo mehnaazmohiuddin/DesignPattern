@@ -5,7 +5,6 @@ import model.Rectangle;
 
 public class Main {
     public static void main(String[] args) {
-
         Rectangle layout = new Rectangle(100,100);
         Rectangle rectangle = new Rectangle(40,10);
         Circle circle = new Circle(5);

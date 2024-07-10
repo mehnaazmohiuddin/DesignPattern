@@ -22,7 +22,10 @@
    The book tells about a part-whole relationship.  We can use this pattern when we want to reccurively call something down the component line. 
    
    Other hirarchial structures are . non single cells organisms, having organs, tissue , organizations, File system, Android or html webpage.
-7. 
+
+
+
+This project also covers a combined small gui , combining many patterns together.
 
 
 
