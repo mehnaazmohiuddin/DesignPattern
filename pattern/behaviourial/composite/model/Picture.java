@@ -20,7 +20,6 @@ public abstract class Picture{
     }
 
     public Picture getParentPicture() {
-
         return parentPicture;
     }
 
@@ -29,12 +28,9 @@ public abstract class Picture{
     }
 
     public void addPicture(Picture child) {
-        System.out.println("Coming to add this chid =>"+child.getClass().getName());
         //ofNullable gives EMPTY  if null, now orElse checks null and gives 'other value'  here its new arraylist
         children =   Optional.ofNullable(children).orElse(new ArrayList<>());
         children.add(child);
-
-        System.out.println(children.size());
     }
 
     public void removePicture(Picture child) {

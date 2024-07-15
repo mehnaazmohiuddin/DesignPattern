@@ -14,7 +14,7 @@ public class Circle extends Picture{
 
     @Override
     public void draw() {
-        System.out.println("drawing  circle with radius first "+size);
+        System.out.println("drawing circle with radius first "+size);
         drawChildren();
     }
 

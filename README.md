@@ -23,8 +23,18 @@
    
    Other hirarchial structures are . non single cells organisms, having organs, tissue , organizations, File system, Android or html webpage.
 
-
-
+7. Stratergy Pattern. 
+    - When we have algorithms that dont users can choose from . then better to put them as stratergies. 
+    - Example Serveral Encoding Schemes. / Several Message digest schemes. 
+    - Here we can create many types of classes without having to create one for each explicity, we can just change the
+      algo by swithing to new stratergy. 
+    - When we dont want to show the user the data of the algorithms.  
+8. Decorator pattern. 
+   - Its a pattern used when we want to change the skin of the object and not the guts. 
+   - its useful when we can add features unknown to us currently, adding functinallity is easy. 
+   - cons, the actual object might be very different from the one we started out with. With additional features. 
+9. Tempalate Pattern. 
+  - the parent knows the algorithm. The children will do the primitive steps.
 This project also covers a combined small gui , combining many patterns together.
 
 

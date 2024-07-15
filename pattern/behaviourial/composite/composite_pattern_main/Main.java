@@ -16,10 +16,6 @@ public class Main {
         rectangle.setParentPicture(layout);
         layout.addPicture(rectangle);
         layout.draw();
-
-
-        // here we are demonstrating that draw is and other APIs are known to the client , client can just use .
         // add child add parent and draw. basically picture interface to draw the picture.
-
     }
 }
