@@ -1,7 +1,7 @@
 package factory;
 
+import jakarta.validation.constraints.NotNull;
 import model.Car;
-import org.jetbrains.annotations.NotNull;
 
 //This class knows how to create a car.
 public class CarCreator {

@@ -38,6 +38,18 @@
 This project also covers a combined small gui , combining many patterns together.
 
 
+According to gang of 4, these are the most used patterns in software industry. 
+
+
+
+
+Here are more
+10. Chain of Responsibility Pattern,
+    Here we the caller doesnt know before hand who needs to handle its request. So we make a chain of handlers.
+    ATM , vendor machine, help depending on context are given as some example. Even in logging this is used.
+
+In our example, we have combined Stratergy pattern and the Chain of responsibility Pattern to make the money dispensor
+
 
 
 from the gang of 4 . 
