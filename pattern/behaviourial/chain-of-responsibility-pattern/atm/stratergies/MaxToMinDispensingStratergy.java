@@ -66,6 +66,7 @@ public class MaxToMinDispensingStratergy implements DispensingStratergy {
         if (total != moneyRequested) {
             return failedToDispenseHandler(moneyRequested);
         }
+        currencyNotesDB.removeNotes(dispensableNotes.toArray(new CurrencyNote[dispensableNotes.size()]));
         return dispensableNotes.toArray(new CurrencyNote[dispensableNotes.size()]);
     }
 
