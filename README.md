@@ -46,11 +46,23 @@ According to gang of 4, these are the most used patterns in software industry.
 Here are more 
 ## Behavourial 
 ### 10.  Chain of Responsibility Pattern,
-    Here we the caller doesnt know before hand who needs to handle its request. So we make a chain of handlers.
+    Here we the caller doesnt know before hand who needs to handle its request. So we make a chain of handlers. Here the
+    handlers implement the iterface which should have handle command. the successor will be given in the constructor.
+    if one handler fails to handle the request the, request  will go to the successor if present. 
     ATM , vendor machine, help depending on context are given as some example. Even in logging this is used.
 
 In our example, we have combined Stratergy pattern and the Chain of responsibility Pattern to make the money dispensor
-
+### 11. Command Pattern
+       Here we are wrapping the "command" so that the caller / invoker can be anyone and the reciver can be anyone. 
+       We also want to do undo / redo and maintain the history of the commands . 
+       for example if there is a transaction we need to know exactly what was done and what needs to be 
+       un-done . So that transaction protery is maintained. Here Command pattern comes in as a powerful pattern.
+       Command knows what exactly is to be done when is called execute and what is to do done when called un-execute.
+        Great way to pass messages. Job Scheduling . Logging changes. [re-execute the changes] Transaction mangement as
+       mentioned.
+      There is a Command interface with execute and unExecute. then we have Invoker and the reciver. in this pattern. 
+      Invoker will maintain the set of commands which were called by it.  In our case Application was the invoker
+      and ClipBoard was the reciver . both interact only via the CopyCommand
 
 
 from the gang of 4 . 
